@@ -1,0 +1,41 @@
+{
+  "name": "aetna",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "watch": "./node_modules/.bin/tsc --watch",
+    "compile": "./node_modules/.bin/tsc",
+    "test": "./node_modules/.bin/jest",
+    "postinstall": "npm run compile",
+    "start": "./node_modules/.bin/concurrently \"npm run watch\" \"NODE_PORT=3001 node ./lib/ratings/src/app.js\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zmetcalf/aetna.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zmetcalf/aetna/issues"
+  },
+  "homepage": "https://github.com/zmetcalf/aetna#readme",
+  "dependencies": {
+    "@types/express": "^4.17.2",
+    "@types/node": "^12.7.11",
+    "@types/request-promise": "^4.1.44",
+    "@types/sqlite3": "^3.1.5",
+    "body-parser": "^1.19.0",
+    "concurrently": "^5.0.0",
+    "express": "^4.17.1",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.4",
+    "sqlite3": "^4.1.0",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.18",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0"
+  }
+}
