@@ -10,7 +10,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use((req: express.Request, res: express.Response, next: Function) => {
     // @ts-ignore
-    req.db = new sqlite3.Database(path.join(__dirname, '../../db/ratings.sql'));
+    req.db = new sqlite3.Database(path.join(__dirname, '../../../db/ratings.db'));
     next();
 });
 
