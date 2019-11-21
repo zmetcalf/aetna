@@ -1,0 +1,15 @@
+interface Movie {
+    movieId: number,
+    imdbId: string,
+    title: string,
+    overview: string,
+    productionCompanies: string,
+    releaseDate: string,
+    budget: number | null | string,
+    revenue?: number,
+    runtime: number,
+    language: string,
+    genres: string,
+    status?: string,
+    rating ?: number | null,
+}

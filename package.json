@@ -7,7 +7,7 @@
     "compile": "./node_modules/.bin/tsc",
     "test": "./node_modules/.bin/jest",
     "postinstall": "npm run compile",
-    "start": "./node_modules/.bin/concurrently \"npm run watch\" \"NODE_PORT=3001 node ./lib/ratings/src/app.js\""
+    "start": "./node_modules/.bin/concurrently \"npm run watch\" \"NODE_PORT=3000 node ./lib/ratings/src/app.js\" \"NODE_PORT=3001 node ./lib/movies/src/app.js\""
   },
   "repository": {
     "type": "git",
